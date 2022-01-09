@@ -30,5 +30,11 @@ export class CoreModule extends EnsureModuleLoadedOnceGuard {
 }   
 ```
 
-### Shared directory
-Shared folder should contain reusable components, pipes, directives.
+### OnPush change detection
+Causes change detection to run when:
+1) An input property reference changes
+2) An EventEmitter (output property) or DOM event fires
+3) Async pipe receives an event
+4) Change detection is manually invoked
+
+> In other words, the framework will check the component if its input properties change, it fires an event, or an Observable fires an event
