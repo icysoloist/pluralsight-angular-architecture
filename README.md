@@ -37,4 +37,4 @@ Causes change detection to run when:
 3) Async pipe receives an event
 4) Change detection is manually invoked
 
-> In other words, the framework will check the component if its input properties change, it fires an event, or an Observable fires an event
+> In other words, the framework will check the component if its input properties change, it fires an event, or an Observable emits
